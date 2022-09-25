@@ -1,0 +1,25 @@
+.paginadoH{
+background-color: rgb(255, 132, 0);
+}
+
+.containerPaginado{
+  
+  display: flex; 
+  direction: row;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 1.5rem;
+}
+
+.numPag{
+background-color:rgb(209, 53, 6);
+border-radius: 15px;
+font-size: medium ;
+}
+
+.btnCambio{
+    background-color:rgb(209, 53, 6);
+    border-radius: 30px;
+} 
+
+

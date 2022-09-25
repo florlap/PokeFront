@@ -1,0 +1,127 @@
+.Landing {
+    background-color: rgb(212, 145, 97);
+    background-image: url("../imagen/cardFondo.jpg");
+    opacity:95%;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.2rem;
+    padding-top: 40px;
+}
+
+.titulo{
+    font-size: 5rem;
+    padding-top: 1rem;
+    padding-right: 45rem;
+    color: rgb(245, 243, 243);
+    align-items: center;
+}
+
+.containerBtn{
+    padding-right: 45rem;
+    position: relative;
+    border-color: #bb0710;
+  
+}
+    .button {
+        position:relative;
+        padding: 1.7em 2em;
+        outline: none;
+        border: 2px solid #2f2424;
+        background: #160909;
+        color: #c03f1f;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 20px;
+        overflow: hidden;
+        transition: 0.2s;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+       }
+       dt
+       button:hover {
+        box-shadow: 0 0 10px #d6740c, 0 0 25px #e82e11, 0 0 50px #cd4105;
+        transition-delay: 0.6s;
+       }
+       
+       button span {
+        position: absolute;
+        align-items: flex-end;
+        
+       }
+       
+       button span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #f5082f);
+       }
+       
+       button:hover span:nth-child(1) {
+        left: 100%;
+        transition: 0.7s;
+       }
+       
+       button span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #dc6b1f);
+       }
+       
+       button:hover span:nth-child(3) {
+        right: 100%;
+        transition: 0.7s;
+        transition-delay: 0.35s;
+       }
+       
+       button span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #cb5704);
+       }
+       
+       button:hover span:nth-child(2) {
+        top: 100%;
+        transition: 0.7s;
+        transition-delay: 0.17s;
+       }
+       
+       button span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #e15205);
+       }
+       
+       button:hover span:nth-child(4) {
+        bottom: 100%;
+        transition: 0.7s;
+        transition-delay: 0.52s;
+       }
+       
+       button:active {
+        background: #ce2c2c;
+        background: linear-gradient(to top right, #d55e09, #df2c2c);
+        color: #bfbfbf;
+        box-shadow: 0 0 8px #bb0710, 0 0 8px #e74003, 0 0 8px #e02626;
+        transition: 0.1s;
+       }
+       
+       button:active span:nth-child(1) 
+       span:nth-child(2) 
+       span:nth-child(2) 
+       span:nth-child(2) {
+        transition: none;
+        transition-delay: none;
+       }
+

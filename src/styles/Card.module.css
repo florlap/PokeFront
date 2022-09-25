@@ -1,0 +1,32 @@
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 290px);
+    gap: 30px;
+    padding-top: 3rem;
+}
+
+.img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    justify-items: center;
+    flex-wrap: nowrap ;
+    border-top-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+ }
+.cardIndividual{
+   width: 290px;
+   height: 390px;
+   background: rgb(178, 207, 224);
+   transition: all 300ms;
+   border-radius: 30px;
+   font-size:small;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   text-decoration: none;
+  }
+  
+  .cardIndividual:hover {
+   opacity: 0.6;
+   transform: scale(1.1);
+  }

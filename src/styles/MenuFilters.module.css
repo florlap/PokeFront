@@ -1,0 +1,22 @@
+
+
+.titulos{
+    color:aliceblue;
+    font-size: small;
+    margin-right: 10px;
+    align-items: center;
+    margin-right: 10px;
+    padding-left: 6rem;
+}
+.opciones{
+    background-color: black;
+    color:aliceblue;
+}
+
+.selectHome{
+    background-color: rgb(209, 53, 6);
+    font-size: small;
+    border-radius: 10px;
+    margin-right: 0.8rem;
+    padding-right: 2.5rem;
+}
