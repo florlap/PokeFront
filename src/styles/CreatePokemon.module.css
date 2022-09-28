@@ -1,21 +1,28 @@
+.container{
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+}
+
+
 .navBar{
+    background-color: black; 
     display: flex;
-    justify-content: center;
-    background-image: url("../imagen/pikblack.png") ;
+    justify-content: center; 
+    background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 60rem;
-   
+
   }
 
-  .titulo{
-    background-color: whitesmoke;
+   .titulo{
+  
     font-size: 3rem;
-    padding-top: 0.5rem;
-    height: 42rem;
-    color: rgb(217, 85, 8);
+    color: rgb(152, 141, 134);
     display: flex;
     justify-content: center;
-  }
+  } 
   
  .link{
     text-decoration: none;
@@ -23,66 +30,102 @@
     color: rgb(227, 13, 13);
     border-radius: 20px; 
  }
+
+
+ .img{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+ }
+
+
+  input{
+  width:100%;
+ }
   
   
-  
-  .container{
-    background-color: orange ;
-    width: 100%;
+ /* .formulario{
+  background-color: red;
+  width:80%;
+ } */
+
+  /* .container{
+    /* background-color: orange ; */
+    /* width: 100%;
     height: 100vh;
     padding-left: 3rem;
     border-radius: 50px;
   
-  }
+  } */ 
   
   .formulario{
-    font-weight: 800;
-    width: 90%;
+    background-color: rgb(225, 163, 82);
+    width: 60%;
     margin: 0 auto;
-    padding: 10rem ;
+    padding: 32px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border-radius: 20px;
+    gap: 20px;
   }
   
-  .form{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    padding: 0.3rem 4rem;
+   /* .form {
+     display: flex;
+    flex-direction: column; 
+    width: 70%;
     border-radius: 40px;
   }
-  .select{
+
+  .form label{
+  background-color: aqua;
+
+  }
+
+
+  .form input{
+  margin-left: 2rem;
+    
+  }  */
+
+
+
+
+  /* .select{
     display: flex;
     flex-direction: column;
     width: 108%;
     padding: 0.4rem 6rem;
     
     padding-left: 5rem;
-  }
+  } */
   
-   .formlabel{
+   /* .formlabel{
     display: flex;
     justify-content: space-between;
-  } 
+  }  */
   
-   .form input{
+    .form input{
     padding: 0.2rem;
     border-radius: 25px;
-  } 
+    justify-content: center;
+    width: 96% ;
+  }  
   
-  .formselect{
-    padding: 0.3rem;
-  }
+   .formselect{
+    padding: 0.2rem;
+    border-radius: 25px;
+    justify-content: center;
+    width: 97%;
+   margin-top:20px
+   }
   
   .form label input select{
-    width: 60%;
+    width: 50%;
     max-width:500px;
     padding: 0.5rem;
     border-radius: 30px;
   }
-  
+   
   
   
   
@@ -94,27 +137,30 @@
   }
   
   
+
   
   .btnCrear {
       padding: 1.3em 3em;
       font-size: 12px;
+      width: 40%;
+      margin: auto;
       text-transform: uppercase;
       letter-spacing: 1.5px;
       font-weight: 500;
-      color: #000;
-      background-color: #fff;
+      color: rgb(11, 12, 12);
+      background-color: rgb(233, 128, 43);
       border: none;
       border-radius: 45px;
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 8px 15px rgba(143, 91, 8, 0.1);
       transition: all 0.3s ease 0s;
       cursor: pointer;
       outline: none;
     }
     
     .btnCrear:hover {
-      background-color: #63a1b9;
-      box-shadow: 0px 15px 20px rgba(68, 99, 140, 0.4);
-      color: #fff;
+      background-color: #c2700c;
+      box-shadow: 0px 15px 20px rgba(198, 110, 33, 0.4);
+      color: rgb(9, 9, 9);
       transform: translateY(-7px);
     }
     

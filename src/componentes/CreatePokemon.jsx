@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import {Link, useNavigate} from 'react-router-dom'
 import { obtPokemons,crearPokemon, obtTipos } from '../redux/actions'
 import styles from "../styles/CreatePokemon.module.css"
+import imagen from '../imagen/pik.png'
+
 
 const CreatePokemon = () => {
   const dispatch = useDispatch()
@@ -204,15 +206,18 @@ useEffect(()=> {
  },[error , nuevoPoke, setDisabledButton]); 
 
   return (
-    <div className={styles.navBar}>
+    <div className={styles.container}>
+     <div className={styles.navBar}>
       <Link className={styles.link} to="/home"><button>Volver</button></Link> 
       <h1 className={styles.titulo}>Crea tu Pokemon</h1>
-      <div className={styles.formulario}>
-      <form className={styles.formulario} onSubmit={(e)=> handlerSubmit(e)}>
-        <div >
+     </div>
+       <form className={styles.formulario} onSubmit={(e)=> handlerSubmit(e)}>
+        <div className={styles.img}>
+         <img src={imagen} alt="pikachu" />
+        </div>
           <div className={styles.form}>
               <label className={styles.formlabel}>Nombre:</label>
-              <input type="text" name="nombre" placeholder= "nombre" onChange={(e)=> handlerChange(e)}/> 
+              <input type="text" name="nombre" placeholder= "Nombre" onChange={(e)=> handlerChange(e)}/> 
               {error.nombre && <p>{error.nombre}</p>}
           </div> 
            <div className={styles.form}>
@@ -276,9 +281,8 @@ useEffect(()=> {
             </ul>
           </div>
               <button className={styles.btnCrear}  disabled={disabledButton} onClick={(e) => handlerSubmit}>Crear</button>
-        </div>
-      </form>
-      </div>
+       
+      </form> 
     </div>
   )
  }
