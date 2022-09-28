@@ -207,8 +207,10 @@ useEffect(()=> {
 
   return (
     <div className={styles.container}>
-     <div className={styles.navBar}>
+      <div className={styles.btnVolver}>
       <Link className={styles.link} to="/home"><button>Volver</button></Link> 
+      </div>
+     <div className={styles.navBar}>
       <h1 className={styles.titulo}>Crea tu Pokemon</h1>
      </div>
        <form className={styles.formulario} onSubmit={(e)=> handlerSubmit(e)}>

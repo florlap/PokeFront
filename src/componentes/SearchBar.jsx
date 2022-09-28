@@ -28,8 +28,8 @@ const SearchBar = () => {
 
   return (
       <div className={styles.containerSearch}>      
-        <form className={styles.form} >
-          <div className={styles.inputBusqueda}>
+        <form className={styles.formSearch} >
+          <div >
           <input className={styles.inputBusqueda} 
             type="text" value={nombre} onChange={(e) => handlerChange(e)} placeholder="Buscar Pokemon"
           />
